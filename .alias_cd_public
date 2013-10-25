@@ -1,0 +1,6 @@
+# etc
+alias etc="cd /usr/local/etc"
+
+# Local Directories
+alias box="cd ~/Sites/box"
+alias dev="cd ~/Development"
