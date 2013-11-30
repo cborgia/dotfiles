@@ -2,7 +2,8 @@
 	name = Chris Borgia
 	email = chris@cborgia.me
 [core]
-	excludesfile = /Users/chris/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	attributesfile = ~/.gitattributes
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
@@ -13,3 +14,7 @@
 	user = cborgia
 [color]
 	ui = true
+
+[apply]
+	# Detect whitespace errors when applying a patch
+	whitespace = fix

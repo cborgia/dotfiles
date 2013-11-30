@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest Homebrew
+brew update
+
+# Upgrade any already-installed formulae
+brew upgrade
+
+# Install wget with IRI support
+brew install wget --enable-iri
+
+# Install the linux version of sed
+brew install gnu-sed
+
+# Install other useful binaries
+brew install ack
+brew install git
+brew install hub
+brew install node
+brew install rsync
+brew install tree
+brew install webkit2png
+
+# Remove outdated versions from the cellar
+brew cleanup
