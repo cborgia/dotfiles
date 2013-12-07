@@ -1,3 +1,6 @@
+# allows me to quickly change into often used directories
+# public
+
 # local etc
 alias letc="cd /usr/local/etc"
 
