@@ -1,3 +1,20 @@
+function hostip(){  
+    ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
+  }
+
+function phpserver () {  
+    IP=$(hostip)
+    URL="http://$IP:$@"
+    echo "Server Running at: $URL"
+    echo "$URL" | pbcopy
+    echo "(It's on your clipboard too!)"
+    /usr/bin/open $URL
+    php -S "$IP:$@"
+  }
+  
+# mkdir and then change into that directory
+function mkdircd () { mkdir -p "$@" && cd "$@"; }
+
 # Terminal functions
 
 # Change working directory to the top-most Finder window location
