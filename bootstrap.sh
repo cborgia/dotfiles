@@ -28,7 +28,7 @@ else
 fi
 unset doIt
 
-# symlink Themes into their required folders
+# symlink theme into their required folder
 ln -s ~/Content/themes/borgia.zsh-theme ~/.oh-my-zsh/themes
 
 
