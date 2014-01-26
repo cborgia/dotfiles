@@ -1,15 +1,15 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="borgia"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bower brew gem git grunt forklift composer rvm)
-
 source $ZSH/oh-my-zsh.sh
 
 # Load some helpufl dotfiles...
-for file in ~/.{private,bash_prompt,exports,alias*,functions,path}; do
+for file in ~/.{private,bash_prompt,exports,aliases*,functions,path}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
+
+plugins=(git knife brew node npm osx vagrant composer)
+
+# Customize to your needs...
+export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/Applications/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
