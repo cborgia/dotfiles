@@ -1,4 +1,4 @@
-# Compiled source #
+j# Compiled source #
 ###################
 *.com
 *.class
@@ -45,3 +45,7 @@ Thumbs.db
 # Unique to Me #
 ################
 *_private
+*.sass-cache
+*.sublime-project
+*.sublime-workspace
+.idea/*

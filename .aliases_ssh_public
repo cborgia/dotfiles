@@ -1,7 +1,0 @@
-# This is the public version of private file: .alias_ssh_private
-# The private file is ignored by git.
-# Itcontains most/all of the servers I need to ssh into.
-# Example:
-
-# Digital Ocean
-alias example='ssh chris@XXX.XXX.XXX.XXX -p XXXXX'

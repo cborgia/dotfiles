@@ -11,5 +11,5 @@ unset file
 
 plugins=(git knife brew node npm osx vagrant composer)
 
-# Customize to your needs...
-export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/Applications/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH
+# # Customize to your needs...
+# export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/Applications/adt-bundle-mac-x86_64-20131030/sdk/platform-tools:$PATH

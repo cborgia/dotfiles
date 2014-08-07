@@ -1,3 +1,19 @@
+# Quickly get into the sites directory
+alias sites='cd ~/Sites'
+
+#Vim Edit on the Knownwhosts
+alias knownhosts="vi ~/.ssh/known_hosts"
+
+# Laravel
+alias art="php artisan"
+alias serve="php artisan serve"
+alias migrate="php artisan migrate"
+alias seed="php artisan db:seed"
+alias tinker="php artisan tinker"
+
+# Vagrant
+alias vm="ssh vagrant@127.0.0.1 -p 2222"
+
 # Copy SSH Key to clipboard
 alias copykey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
 
@@ -66,3 +82,26 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias bower='noglob bower'
 
 alias cc="sudo killall -HUP mDNSResponder"
+
+
+# Server Control script (easy on/off)
+# serverctl.sh script is located in ~/bin
+alias serverctl="serverctl.sh"
+
+# Nginx
+alias nginxstart="sudo nginx"
+alias nginxstop="sudo nginx -s stop"
+alias nginxrestart="nginxstop && nginxstart"
+
+# PHP-FPM
+alias fpmstart="sudo php-fpm"
+alias fpmstop="killall -c php-fpm"
+
+alias art="php artisan"
+
+
+# Whitelist
+alias vim='nocorrect vim '
+alias subl='nocorrect subl '
+alias cask='nocorrect cask '
+alias link='nocorrect link '
