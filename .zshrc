@@ -12,4 +12,4 @@ unset file
 plugins=(git knife brew node npm osx vagrant composer)
 
 # Customize to your needs...
-export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH
+# export PATH=~/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH
