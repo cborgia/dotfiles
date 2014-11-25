@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+rm -rf app/controllers
+rm -rf app/models
+rm -rf app/commands
+rm -rf app/tests
+rm -rf app/filters.php
+
+echo 'The Laravel App was cleaned up a bit!'
