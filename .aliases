@@ -17,6 +17,22 @@ alias migrate="php artisan migrate"
 alias seed="php artisan db:seed"
 alias tinker="php artisan tinker"
 
+# Home Brew MEMP
+alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
+alias nginx.restart='nginx.stop && nginx.start'
+alias php-fpm.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.php56.plist"
+alias php-fpm.restart='php-fpm.stop && php-fpm.start'
+alias mysql.start="launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.stop="launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist"
+alias mysql.restart='mysql.stop && mysql.start'
+alias nginx.logs.error='tail -250f /usr/local/etc/nginx/logs/error.log'
+alias nginx.logs.access='tail -250f /usr/local/etc/nginx/logs/access.log'
+alias nginx.logs.default.access='tail -250f /usr/local/etc/nginx/logs/default.access.log'
+alias nginx.logs.default-ssl.access='tail -250f /usr/local/etc/nginx/logs/default-ssl.access.log'
+alias nginx.logs.phpmyadmin.error='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.error.log'
+alias nginx.logs.phpmyadmin.access='tail -250f /usr/local/etc/nginx/logs/phpmyadmin.access.log'
 # Vagrant
 alias vm="ssh vagrant@127.0.0.1 -p 2222"
 
@@ -83,22 +99,6 @@ alias chromekill="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v exten
 alias bower='noglob bower'
 
 alias cc="sudo killall -HUP mDNSResponder"
-
-
-# Server Control script (easy on/off)
-# serverctl.sh script is located in ~/bin
-alias serverctl="serverctl.sh"
-
-# Nginx
-alias nginxstart="sudo nginx"
-alias nginxstop="sudo nginx -s stop"
-alias nginxrestart="nginxstop && nginxstart"
-
-# PHP-FPM
-alias fpmstart="sudo php-fpm"
-alias fpmstop="killall -c php-fpm"
-
-alias art="php artisan"
 
 
 # Whitelist
