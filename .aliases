@@ -104,7 +104,6 @@ alias cc="sudo killall -HUP mDNSResponder"
 
 # Whitelist
 alias vim='nocorrect vim '
-alias subl='nocorrect subl '
 alias cask='nocorrect cask '
 alias link='nocorrect link '
 
