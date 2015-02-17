@@ -43,42 +43,33 @@ function server() {
 # mkdir and then change into that directory
 function mkdircd () { mkdir -p "$@" && cd "$@"; }
 
-# Start a PHP server from a directory, optionally specifying the port
-# (Requires PHP 5.4.0+.)
-function phpserver() {
-        local port="${1:-4000}"
-        local ip=$(ipconfig getifaddr en1)
-        sleep 1 && open "http://${ip}:${port}/" &
-        php -S "${ip}:${port}"
-}
-
 
 # `s` with no arguments opens the current directory in Sublime Text, otherwise
 # opens the given location
 function s() {
-        if [ $# -eq 0 ]; then
-                subl .
-        else
-                subl "$@"
-        fi
+    if [ $# -eq 0 ]; then
+            subl .
+    else
+            subl "$@"
+    fi
 }
 
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
-        if [ $# -eq 0 ]; then
-                vim .
-        else
-                vim "$@"
-        fi
+    if [ $# -eq 0 ]; then
+            vim .
+    else
+            vim "$@"
+    fi
 }
 
 # `o` with no arguments opens current directory, otherwise opens the given
 # location
 function o() {
-        if [ $# -eq 0 ]; then
-                open .
-        else
-                open "$@"
-        fi
+    if [ $# -eq 0 ]; then
+            open .
+    else
+            open "$@"
+    fi
 }
