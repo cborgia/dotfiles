@@ -2,14 +2,6 @@ function hostip(){
     ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
   }
 
-function routes()
-{
-    if [ $# -eq 0 ]; then
-        php artisan route:list
-    else
-        php artisan route:list | grep ${1}
-    fi
-}
 function phpserver () {  
     IP=$(hostip)
     URL="http://$IP:$@"
