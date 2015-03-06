@@ -4,7 +4,7 @@ ZSH_THEME="borgia"
 source $ZSH/oh-my-zsh.sh
 
 # Load some dotfiles
-for file in ~/.{private,bash_prompt,exports,aliases*,functions,path}; do
+for file in ~/.{aliases,private,bash_prompt,exports,functions,path}; do
 	[ -r "$file" ] && source "$file"
 done
 unset file
