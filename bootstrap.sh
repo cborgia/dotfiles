@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#
+# run this bootstrap to install the dotfiles and file to setup a new mac env. 
 
 cd "$(dirname "${BASH_SOURCE}")"
 

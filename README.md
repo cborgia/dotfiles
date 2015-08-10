@@ -1,6 +1,6 @@
 # My Dotfiles
 
-Current as of _November 25, 2014_
+Current as of _August 9, 2015_
 
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for shell management (tweaks to the bootstrap)
 * .osx (useful after HD formats)
