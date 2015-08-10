@@ -65,6 +65,7 @@ brew cask install 1password
 brew cask install ableton-live
 brew cask install adobe-creative-cloud
 brew cask install airfoil
+brew cask install alfred
 brew cask install appcleaner
 brew cask install cyberduck
 brew cask install dropbox
