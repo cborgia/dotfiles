@@ -75,6 +75,7 @@ brew cask install firefox
 brew cask install imageoptim
 brew cask install iterm2
 brew cask install java
+brew cask install launchrocket
 brew cask install levelator
 brew cask install little-snitch
 brew cask install macdown
@@ -88,6 +89,7 @@ brew cask install sequel-pro
 brew cask install shuttle
 brew cask install sourcetree
 brew cask install sublime-text
+brew cask install toggldesktop
 brew cask install torbrowser
 brew cask install tower
 brew cask install transmission
