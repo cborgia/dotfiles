@@ -67,6 +67,7 @@ brew cask install adobe-creative-cloud
 brew cask install airfoil
 brew cask install alfred
 brew cask install appcleaner
+brew cask install chronosync
 brew cask install cyberduck
 brew cask install dropbox
 brew cask install ember
