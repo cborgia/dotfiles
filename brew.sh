@@ -41,16 +41,17 @@ brew install homebrew/dupes/screen
 
 # Install other useful binaries
 brew install ack
+brew install automysqlbackup
+brew install cmatrix
 brew install git
 brew install hub
+brew install mackup
 brew install node
+brew install nmap
 brew install rsync
 brew install tree
 brew install webkit2png
 brew install tmux
-brew install cmatrix
-brew install mackup
-brew install nmap
 
 # Python
 brew install python
