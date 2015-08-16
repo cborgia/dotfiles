@@ -41,6 +41,7 @@ brew install homebrew/dupes/screen
 
 # Install other useful binaries
 brew install ack
+brew cask install appcleaner
 brew install automysqlbackup
 brew install cmatrix
 brew install git
