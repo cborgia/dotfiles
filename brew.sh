@@ -47,8 +47,10 @@ brew install cmatrix
 brew install git
 brew install hub
 brew install mackup
+brew install ngrok
 brew install node
 brew install nmap
+brew install reattach-to-user-namespace
 brew install rsync
 brew install tree
 brew install webkit2png
