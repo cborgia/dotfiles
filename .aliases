@@ -6,11 +6,11 @@ alias knownhosts="vim ~/.ssh/known_hosts"
 
 # Quickly get into the a few directory
 alias sites='cd ~/Sites'
-alias servers='cd ~/Servers'
-alias content='cd ~/Content'
-alias projects='cd ~/Projects'
+alias content='cd ~/Dropbox/Content'
+alias projects='cd ~/Dropbox/Projects'
+alias repos='cd ~/Repos'
 
-# Laravel Artisan 
+# Laravel Artisan
 alias art="php artisan"
 alias serve="php artisan serve"
 alias migrate="php artisan migrate"
