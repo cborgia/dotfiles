@@ -47,6 +47,7 @@ brew install cmatrix
 brew install git
 brew install hub
 brew install mackup
+brew install mtr
 brew install ngrok
 brew install node
 brew install nmap
@@ -61,6 +62,9 @@ brew install python
 
 # Vim
 brew install vim --env-std --override-system-vim --enable-pythoninterp;
+
+#p hp
+brew install homebrew/php/phplint
 
 # Cask
 brew install caskroom/cask/brew-cask
