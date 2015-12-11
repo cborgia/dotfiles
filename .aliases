@@ -1,12 +1,14 @@
+# General Shortcuts
+alias sites='cd ~/Sites'
+alias repos='cd ~/repos'
+alias g="git"
+
+
 # Copy SSH Key to clipboard
 alias copykey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
 
 # Open knonwn_hosts file in Vim
 alias knownhosts="vim ~/.ssh/known_hosts"
-
-# Quickly get into the a few directory
-alias sites='cd ~/Sites'
-alias repos='cd ~/repos'
 
 # Laravel Artisan
 alias art="php artisan"
