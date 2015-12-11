@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# run this bootstrap to install the dotfiles and file to setup a new mac env. 
+# run this bootstrap to install the dotfiles and file to setup a new mac env.
 
 cd "$(dirname "${BASH_SOURCE}")"
 
@@ -8,7 +8,7 @@ git pull origin master
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~;
+		--exclude "README.md" -avh --no-perms . ~;
 	source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
