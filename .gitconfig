@@ -13,6 +13,7 @@
 	whitespace = fix
 [push]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	default = simple
 [merge]
 	tool = Kaleidoscope
 [difftool "Kaleidoscope"]
