@@ -8,7 +8,7 @@ git pull origin master
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-		--exclude "README.md" -avh --no-perms . ~;
+		--exclude "README.md" --exclude "init" --exclude "brew.sh"  -avh --no-perms . ~;
 	source ~/.bash_profile
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
