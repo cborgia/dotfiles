@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
-#
-# run this bootstrap to install the dotfiles and file to setup a new mac env.
 
-cd "$(dirname "${BASH_SOURCE}")"
-
-git pull origin master
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
