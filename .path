@@ -10,6 +10,5 @@ PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
 PATH=$PATH:~/.rvm/bin
 PATH=$PATH:~/.composer/vendor/bin
-PATH=$PATH:"$(brew --prefix homebrew/php/php56)/sbin"
 
 export PATH
