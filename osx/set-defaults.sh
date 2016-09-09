@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# Ask for the administrator password
+# Ask for the administrator password upfront
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
@@ -573,12 +573,6 @@ defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
-###############################################################################
-# GPGMail 2                                                                   #
-###############################################################################
-
-# Disable signing emails by default
-defaults write ~/Library/Preferences/org.gpgtools.gpgmail SignNewEmailsByDefault -bool false
 
 ###############################################################################
 # Sublime Text                                                                #
@@ -607,31 +601,6 @@ defaults write org.m0k.transmission WarningDonate -bool false
 defaults write org.m0k.transmission WarningLegal -bool false
 
 ###############################################################################
-# Twitter.app                                                                 #
-###############################################################################
-
-# Disable smart quotes as it’s annoying for code tweets
-defaults write com.twitter.twitter-mac AutomaticQuoteSubstitutionEnabled -bool false
-
-# Show the app window when clicking the menu icon
-defaults write com.twitter.twitter-mac MenuItemBehavior -int 1
-
-# Enable the hidden ‘Develop’ menu
-defaults write com.twitter.twitter-mac ShowDevelopMenu -bool true
-
-# Open links in the background
-defaults write com.twitter.twitter-mac openLinksInBackground -bool true
-
-# Allow closing the ‘new tweet’ window by pressing `Esc`
-defaults write com.twitter.twitter-mac ESCClosesComposeWindow -bool true
-
-# Show full names rather than Twitter handles
-defaults write com.twitter.twitter-mac ShowFullNames -bool true
-
-# Hide the app in the background if it’s not the front-most window
-defaults write com.twitter.twitter-mac HideInBackground -bool true
-
-###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
@@ -642,3 +611,25 @@ for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
     killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+
+
+# See if the user wants to reboot.
+function reboot() {
+  read -p "Do you want to reboot your computer now? (y/N)" choice
+  case "$choice" in
+    y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
+    n | N | No | no) echo "No"; exit;; # If n | no, exit
+    * ) echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return;;
+  esac
+}
+
+# Call on the function
+if [[ "Yes" == $(reboot) ]]
+then
+  echo "Rebooting."
+  sudo reboot
+  exit 0
+else
+  exit 1
+fi

@@ -1,0 +1,7 @@
+"*":
+  editor:
+    fontFamily: "oper"
+  "exception-reporting":
+    userId: "7d0925a2-d243-edfe-3c4a-93ec2fd23d76"
+  welcome:
+    showOnStartup: false
