@@ -26,6 +26,10 @@ And then some MacOS stuff:
 
     sh ~/repos/mine/cborgia/dotfiles/osx/set-defaults.sh
 
+Run the setup.sh script from the 
+
+	sh ~/repos/mine/cborgia/dotfiles/setup.sh
+
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for shell management (tweaks to the bootstrap)
 * .osx (after fresh install of OS X)
 * .brew (after fresh install of OS X)

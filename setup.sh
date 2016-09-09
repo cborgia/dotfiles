@@ -126,8 +126,8 @@ SCRIPT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 DOTFILES_DIR="$(dirname "$SCRIPT_DIR")"
 
 
-dir=~/dotfiles                        # dotfiles directory
-dir_backup=~/dotfiles_old             # old dotfiles backup directory
+dir=~/repos/mine/cborgia/dotfiles                     # dotfiles directory
+dir_backup=~/repos/mine/cborgia/dotfiles_old          # old dotfiles backup directory
 
 # Get current dir (so run this script from anywhere)
 
@@ -144,29 +144,27 @@ echo -n "Changing to the $dir directory..."
 cd $dir
 echo "done"
 
-#
-# Actual symlink stuff
-#
+#########################################################################
+# Time to symlink stuff
+#########################################################################
 
 
 # Atom editor settings
 echo -n "Copying Atom settings.."
-mv -f ~/.atom ~/dotfiles_old/
-ln -s $HOME/dotfiles/atom ~/.atom
+mv -f ~/.atom $dir_backup
+ln -s $dir/atom ~/.atom
 echo "done"
 
 
 declare -a FILES_TO_SYMLINK=(
 
-    'shell/shell_aliases'
-    'shell/shell_config'
-    'shell/shell_exports'
-    'shell/shell_functions'
+    'shell/aliases'
+    'shell/exports'
+    'shell/functions'
     'shell/bash_profile'
     'shell/bash_prompt'
     'shell/bashrc'
     'shell/zshrc'
-    'shell/ackrc'
     'shell/curlrc'
     'shell/gemrc'
     'shell/inputrc'
@@ -180,11 +178,13 @@ declare -a FILES_TO_SYMLINK=(
 
 # FILES_TO_SYMLINK="$FILES_TO_SYMLINK .vim bin" # add in vim and the binaries
 
-# Move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
+# Move any existing dotfiles in homedir to dotfiles_old directory, 
+# then create symlinks from the homedir to any files in the dotfiles 
+# directory specified in $files
 
 for i in ${FILES_TO_SYMLINK[@]}; do
     echo "Moving any existing dotfiles from ~ to $dir_backup"
-    mv ~/.${i##*/} ~/dotfiles_old/
+    mv ~/.${i##*/} ~/repos/mine/cborgia/dotfiles_old/
 done
 
 
@@ -222,19 +222,13 @@ done
 unset FILES_TO_SYMLINK
 
 # Copy binaries
-ln -fs $HOME/dotfiles/bin $HOME
+ln -fs $HOME/repos/mine/cborgia/dotfiles/bin $HOME
 
 declare -a BINARIES=(
-    'batcharge.py'
     'crlf'
-    'dups'
-    'git-delete-merged-branches'
-    'nyan'
-    'passive'
-    'proofread'
+    'httpcompression'
     'ssh-key'
-    'weasel'
-    )
+)
 
 for i in ${BINARIES[@]}; do
     echo "Changing access permissions for binary script :: ${i##*/}"
@@ -244,62 +238,20 @@ done
 unset BINARIES
 
 # Symlink online-check.sh
-ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
+# ln -fs $HOME/repos/mine/cborgia/dotfiles/lib/online-check.sh $HOME/online-check.sh
 
 # Write out current crontab
-crontab -l > mycron
-# Echo new cron into cron file
-echo "* * * * * ~/online-check.sh" >> mycron
-# Install new cron file
-crontab mycron
-rm mycron
+# crontab -l > mycron
+# # Echo new cron into cron file
+# echo "* * * * * ~/online-check.sh" >> mycron
+# # Install new cron file
+# crontab mycron
+# rm mycron
 
 }
-
-install_zsh () {
-# Test to see if zshell is installed.  If it is:
-if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
-# Install Oh My Zsh if it isn't already present
-if [[ ! -d $dir/oh-my-zsh/ ]]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-fi
-# Set the default shell to zsh if it isn't currently set to zsh
-if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
-    chsh -s $(which zsh)
-fi
-else
-# If zsh isn't installed, get the platform of the current machine
-platform=$(uname);
-# If the platform is Linux, try an apt-get to install zsh and then recurse
-if [[ $platform == 'Linux' ]]; then
-    if [[ -f /etc/redhat-release ]]; then
-        sudo yum install zsh
-        install_zsh
-    fi
-    if [[ -f /etc/debian_version ]]; then
-        sudo apt-get install zsh
-        install_zsh
-    fi
-# If the platform is OS X, tell the user to install zsh :)
-elif [[ $platform == 'Darwin' ]]; then
-    echo "We'll install zsh, then re-run this script!"
-    brew install zsh
-    exit
-fi
-fi
-}
-
-# Package managers & packages
-
-# . "$DOTFILES_DIR/install/brew.sh"
-# . "$DOTFILES_DIR/install/npm.sh"
-
-# if [ "$(uname)" == "Darwin" ]; then
-# . "$DOTFILES_DIR/install/brew-cask.sh"
-# fi
 
 main
-# install_zsh
+
 
 ###############################################################################
 # Atom                                                                        #
@@ -317,7 +269,7 @@ main
 ###############################################################################
 
 # Install Zsh settings
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
+ln -sf ~/repos/mine/cborgia/dotfiles/zsh/themes/borgia.zsh-theme $HOME/.oh-my-zsh/themes
 
 
 ###############################################################################
@@ -328,7 +280,7 @@ ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Install the Solarized Dark theme for iTerm
-open "${HOME}/dotfiles/iterm/themes/Solarized Dark.itermcolors"
+open "$HOME/repos/mine/cborgia/dotfiles/iterm/themes/Solarized Dark.itermcolors"
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
