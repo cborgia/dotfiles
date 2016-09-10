@@ -7,7 +7,7 @@ Current as of: __Sep, 7 2016__.
 
 Most likely you already have some files in your home directory (~). Back them up.
 
-## Fresh OS
+## Fresh macOS
 
 If this is a new install (fresh OS) start by installing xcode
 
@@ -18,23 +18,19 @@ Then brew and brew cask:
     $HOME/repos/mine/cborgia/dotfiles/install/brew.sh
     $HOME/repos/mine/cborgia/dotfiles/install/brew-cask.sh
 
-And some Node
+And some Node stuff
 
     $HOME/repos/mine/cborgia/dotfiles/install/npm.sh
     
 And then some MacOS stuff:
 
-    sh ~/repos/mine/cborgia/dotfiles/osx/set-defaults.sh
+    sh ~/repos/mine/cborgia/dotfiles/macOS/set-defaults.sh
 
 Run the setup.sh script from the 
 
 	sh ~/repos/mine/cborgia/dotfiles/setup.sh
 
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for shell management (tweaks to the bootstrap)
-* .osx (after fresh install of OS X)
-* .brew (after fresh install of OS X)
-* .functions
-
 
 
 ## How it works
