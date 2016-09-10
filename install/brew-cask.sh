@@ -35,6 +35,7 @@ apps=(
     imagealpha
     imageoptim
     iterm2
+    java
     kaleidoscope
     macdown
     malwarebytes-anti-malware
