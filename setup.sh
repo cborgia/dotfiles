@@ -170,9 +170,9 @@ declare -a FILES_TO_SYMLINK=(
     'shell/inputrc'
     'shell/screenrc'
 
-    'git/gitattributes'
     'git/gitconfig'
     'git/gitignore'
+    'git/gitignore_global'
 
     )
 

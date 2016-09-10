@@ -2,7 +2,7 @@
 	name = Chris Borgia
 	email = me@cborgia.me
 [core]
-	excludesfile = /Users/chris/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
 [github]
 	user = cborgia
