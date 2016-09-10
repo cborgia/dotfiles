@@ -10,10 +10,10 @@ brew tap caskroom/versions
 apps=(
     1password
     ableton-live
-    appcleaner
     adobe-creative-cloud
     airfoil
     alfred
+    appcleaner
     atom
     chronosync
     cyberduck
@@ -41,25 +41,25 @@ apps=(
     malwarebytes-anti-malware
     ngrok
     opera
-    screenflow
     screaming-frog-seo-spider
+    screenflow
     sequel-pro
+    shuttle
     skype
     slack
-    shuttle
-    spectacle
-    sublime-text
-    spotify
     sourcetree
-    tower
-    transmit
+    spectacle
+    spotify
+    sublime-text
     toggldesktop
     torbrowser
     tower
+    tower
     transmission
+    transmit
+    utorrent
     validator-sac
     vlc
-    utorrent
     webstorm
 )
 

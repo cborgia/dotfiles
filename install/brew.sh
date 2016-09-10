@@ -23,8 +23,8 @@ apps=(
     automysqlbackup
     bash
     bash-completion2
-    coreutils
     cmatrix
+    coreutils
     ffmpeg
     ffmpeg --with-libvpx
     findutils
@@ -43,15 +43,15 @@ apps=(
     mongodb
     moreutils
     mtr
+    nmap
     node
     nvm
-    nmap
     python
-    rsync
     reattach-to-user-namespace
+    rsync
     source-highlight
-    tree
     tmux
+    tree
     vim --env-std --override-system-vim --enable-pythoninterp
     wget
     wifi-password
