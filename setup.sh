@@ -149,11 +149,11 @@ echo "done"
 #########################################################################
 
 
-# Atom editor settings
-echo -n "Copying Atom settings.."
-mv -f ~/.atom $dir_backup
-ln -s $dir/atom ~/.atom
-echo "done"
+# # Atom editor settings
+# echo -n "Copying Atom settings.."
+# mv -f ~/.atom $dir_backup
+# ln -s $dir/atom ~/.atom
+# echo "done"
 
 
 declare -a FILES_TO_SYMLINK=(

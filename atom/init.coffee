@@ -1,1 +1,0 @@
-/Users/chris/Dropbox/Mackup/.atom/init.coffee
