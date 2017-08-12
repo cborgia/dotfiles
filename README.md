@@ -1,32 +1,24 @@
-# Borgia Dotfiles
+# cborgia dotfiles
 
-How I go from fresh to functional on MacOS, with dotfiles and cmd line tools.
-Current as of: __Sep, 7 2016__.
+How I go from fresh to functional on MacOS with dotfiles and cmd line tools.
 
-## Backup Existing Configs
+Current as of: __Aug, 12 2017__
+
+### Backup Existing Configs
 
 Most likely you already have some files in your home directory (~). Back them up.
 
-## Fresh macOS
+### Fresh macOS
 
-If this is a new install (fresh OS) start by installing xcode
+If this is a new fresh OS start by installing xcode then run your brew install scripts, then npm and MacOS:
 
     xcode-select --install
-
-Then brew and brew cask:
-
     $HOME/repos/mine/cborgia/dotfiles/install/brew.sh
     $HOME/repos/mine/cborgia/dotfiles/install/brew-cask.sh
-
-And some Node stuff
-
     $HOME/repos/mine/cborgia/dotfiles/install/npm.sh
-    
-And then some MacOS stuff:
-
     sh ~/repos/mine/cborgia/dotfiles/macOS/set-defaults.sh
 
-Run the setup.sh script from the 
+Dotsfiles:
 
 	sh ~/repos/mine/cborgia/dotfiles/setup.sh
 
