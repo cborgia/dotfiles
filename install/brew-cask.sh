@@ -24,7 +24,6 @@ apps=(
     firefox
     firefoxnightly
     flux
-    glimmerblocker
     google-adwords-editor
     google-chrome
     google-chrome-canary
@@ -53,7 +52,6 @@ apps=(
     sublime-text
     toggldesktop
     torbrowser
-    tower
     tower
     transmission
     transmit
