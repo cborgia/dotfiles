@@ -17,10 +17,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "mbp"
-sudo scutil --set HostName "mbp"
-sudo scutil --set LocalHostName "mbp"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mbp"
+sudo scutil --set ComputerName "touch"
+sudo scutil --set HostName "touch"
+sudo scutil --set LocalHostName "touch"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "touch"
 
 # Set standby delay to 24 hours (default is 1 hour)
 # sudo pmset -a standbydelay 86400
@@ -364,7 +364,7 @@ defaults write com.apple.dock mouse-over-hilite-stack -bool true
 # defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
 # Show indicator lights for open applications in the Dock
-# defaults write com.apple.dock show-process-indicators -bool true
+defaults write com.apple.dock show-process-indicators -bool true
 
 # Wipe all (default) app icons from the Dock
 # This is only really useful when setting up a new Mac, or if you don’t use
