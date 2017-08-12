@@ -3,6 +3,7 @@ alias sites='cd ~/Sites'
 alias repos='cd ~/repos'
 alias d='cd ~/Desktop'
 
+# SSH
 alias copykey="cat ~/.ssh/id_rsa.pub | pbcopy && echo 'Copied to clipboard.'"
 alias knownhosts="vim ~/.ssh/known_hosts"
 
