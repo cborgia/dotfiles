@@ -20,11 +20,14 @@ brew update
 brew upgrade --all
 
 apps=(
+    ansible
     automysqlbackup
     bash
     bash-completion2
     cmatrix
+    composer
     coreutils
+    dnsmasq
     ffmpeg
     ffmpeg --with-libvpx
     findutils
@@ -32,23 +35,26 @@ apps=(
     git-extras
     gnu-sed --with-default-names
     grep --with-default-names
-    homebrew/completions/brew-cask-completion
-    homebrew/dupes/grep
-    homebrew/dupes/openssh
-    homebrew/dupes/screen
     homebrew/php/phplint
     hub
+    httpie
     imagemagick --with-webp
     mackup
     mongodb
     moreutils
     mtr
+    mysql
     nmap
+    nginx
     node
     nvm
+    openssh
+    openssl
     python
+    python3
     reattach-to-user-namespace
     rsync
+    screen
     source-highlight
     tmux
     tree
