@@ -15,6 +15,7 @@ fi
 
 brew tap homebrew/versions
 brew tap homebrew/dupes
+brew tap buo/cask-upgrade
 
 brew update
 brew upgrade --all
