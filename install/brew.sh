@@ -28,6 +28,7 @@ apps=(
     composer
     coreutils
     dnsmasq
+    exa
     ffmpeg
     ffmpeg --with-libvpx
     findutils
