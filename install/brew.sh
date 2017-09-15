@@ -37,16 +37,16 @@ apps=(
     gnu-sed --with-default-names
     grep --with-default-names
     homebrew/php/phplint
-    hub
     httpie
+    hub
     imagemagick --with-webp
     mackup
     mongodb
     moreutils
     mtr
     mysql
-    nmap
     nginx
+    nmap
     node
     nvm
     openssh
