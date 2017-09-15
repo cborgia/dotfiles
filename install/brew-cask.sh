@@ -40,6 +40,7 @@ apps=(
     malwarebytes-anti-malware
     ngrok
     opera
+    phpstorm
     screaming-frog-seo-spider
     screenflow
     sequel-pro
@@ -56,6 +57,7 @@ apps=(
     transmission
     transmit
     utorrent
+    vagrant
     validator-sac
     vlc
     webstorm
