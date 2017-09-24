@@ -125,14 +125,13 @@ done
 SCRIPT_DIR="$(cd "$(dirname "$0")"; pwd -P)"
 DOTFILES_DIR="$(dirname "$SCRIPT_DIR")"
 
-
-dir=~/repos/mine/cborgia/dotfiles                     # dotfiles directory
-dir_backup=~/repos/mine/cborgia/dotfiles_old          # old dotfiles backup directory
-
-# Get current dir (so run this script from anywhere)
-
 export DOTFILES_DIR
 DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+
+# Get current dir (so we can run this script from any location)
+dir=~/repos/mine/cborgia/dotfiles
+dir_backup=~/repos/mine/cborgia/dotfiles_old
 
 # Create dotfiles_old in homedir
 echo -n "Creating $dir_backup for backup of any existing dotfiles in ~..."
