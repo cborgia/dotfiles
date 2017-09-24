@@ -15,12 +15,12 @@ apps=(
     alfred
     appcleaner
     atom
+    atom-beta
     chronosync
     cyberduck
     dash
     dropbox
     elmedia-player
-    evernote
     firefox
     firefoxnightly
     flux
@@ -30,7 +30,7 @@ apps=(
     google-drive
     google-web-designer
     gyazo
-    hammerspoon
+    hermes
     imagealpha
     imageoptim
     iterm2
