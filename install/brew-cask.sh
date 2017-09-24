@@ -15,12 +15,12 @@ apps=(
     alfred
     appcleaner
     atom
+    atom-beta
     chronosync
     cyberduck
     dash
     dropbox
     elmedia-player
-    evernote
     firefox
     firefoxnightly
     flux
@@ -30,37 +30,31 @@ apps=(
     google-drive
     google-web-designer
     gyazo
-    hammerspoon
+    hyper
     imagealpha
     imageoptim
     iterm2
     java
     kaleidoscope
     macdown
-    malwarebytes-anti-malware
     ngrok
     opera
-    phpstorm
     screaming-frog-seo-spider
     screenflow
     sequel-pro
     shuttle
-    skype
     slack
     sourcetree
     spectacle
-    spotify
     sublime-text
     toggldesktop
     torbrowser
     tower
     transmission
     transmit
-    utorrent
     vagrant
     validator-sac
     vlc
-    webstorm
 )
 
 brew cask install "${apps[@]}"
