@@ -38,10 +38,13 @@ while test $# -gt 0; do
 	shift
 done
 
-export ZSH=$dotfilesDirectory
+export ZSH=$HOME/repos/mine/cborgia/dotfiles
+
+# Set macOS defaults
+sh $ZSH/mods/macos/set-defaults.sh
 
 # Install homebrew
-$ZSH/mods/homebrew/install.sh 2>&1
+sh $ZSH/mods/homebrew/install.sh 2>&1
 
 # Upgrade homebrew
 echo "› brew update"
@@ -49,7 +52,5 @@ brew update
 
 # Install software
 echo "› $ZSH/install"
-$ZSH/script/install
+$ZSH/install
 
-# Set macOS defaults
-$ZSH/mods/macos/set-defaults.sh
