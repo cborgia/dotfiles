@@ -79,6 +79,7 @@ cask 'dropbox'
 cask 'elmedia-player'
 cask 'firefox'
 cask 'firefoxnightly'
+cask 'forklift'
 cask 'flux'
 cask 'google-adwords-editor'
 cask 'google-chrome'
@@ -139,6 +140,7 @@ cask 'font-source-serif-pro'
 # Install Mac App Store apps
 mas 'Airmail', id: 918858936
 mas 'Better Rename 9', id: 414209656
+mas 'CodeBox', id: 412536790
 mas 'iMovie', id: 408981434
 mas 'Keynote', id: 409183694
 mas 'Gapplin', id: 768053424
