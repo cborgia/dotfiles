@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+# Exit if any subcommand or pipeline returns a non-zero status.
+set -e
+
+cd "$(dirname $0)"
+
+# Run Homebrew through the Brewfile
+echo "› brew bundle"
+brew bundle
+
+# find the installers and run them iteratively
+echo "installing all install.sh filess"
+find . -name install.sh | while read installer ; do sh -c "${installer}" ; done

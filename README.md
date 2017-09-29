@@ -1,33 +1,21 @@
-# cborgia dotfiles
+# cborgia Dotfiles
 
-How I go from fresh to functional on MacOS with dotfiles and cmd line tools.
+These are my dotfiles, they are currently undergoing a rewrite, based on the idea of a Module Based Directory Structure.
 
-Current as of: __Aug, 12 2017__
+### Module Based Directory Structure
 
-### Backup Existing Configs
-
-Most likely you already have some files in your home directory (~). Back them up.
-
-### Fresh macOS
-
-If this is a new fresh OS start by installing xcode then run your brew install scripts, then npm and MacOS:
-
-    xcode-select --install
-    $HOME/repos/mine/cborgia/dotfiles/install/brew.sh
-    $HOME/repos/mine/cborgia/dotfiles/install/brew-cask.sh
-    $HOME/repos/mine/cborgia/dotfiles/install/npm.sh
-    sh ~/repos/mine/cborgia/dotfiles/macOS/set-defaults.sh
-
-### Dotsfiles
-
-These are the dotfiles themselfs. On first run and on dotfile update, you will run this.
-
-	sh ~/repos/mine/cborgia/dotfiles/setup.sh
-
-## How it works
-I do not edit the dotfiles directly in my home directory. Instead I edit a repo I store in `~/Projects/Dotfiles` and run the bootstrap file when I need to push changes to my home directory.
+The `mods` directory is a collection of directories -each directory within holds one or more files, that relate to each other. This allows for easier management whereby each module can have it's own setup file, shell environment file and symbolic links. The idea of modules was borrowed from the "topics" that [holman](https://github.com/holman/dotfiles) has in his dotfiles.
 
 
-## Files not included:
-* .shuttle.json - I use [shuttle](http://fitztrev.github.io/shuttle/) to quickly SSH into servers, no need to share that info here.
+### To Do:
+
+
+* [x] Allow for 2 Workflows: an `Initial Workflow` for the initial install and setup of new machine, and an `Ongoing Workflow` for ongoing updates and modifications.
+* [ ] Support both MacOS and Linux.
+* [ ] User configurable from a single configuration file.
+* [ ] Allow for the setup of private (ignored) configs
+
+
+
+*Inspiration for this setup provided by the dotfiles of several others: [holman](https://github.com/holman/dotfiles), [driesvints](https://github.com/driesvints/dotfiles) and [mathiasbynens](https://github.com/mathiasbynens/dotfiles).*
 

@@ -1,0 +1,7 @@
+[user]
+        name = chris
+        email = me@cborgia.me
+[credential]
+        helper = GIT_CREDENTIAL_HELPER
+[github]
+    user = cborgia

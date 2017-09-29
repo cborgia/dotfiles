@@ -1,0 +1,155 @@
+cask_args appdir: '/Applications'
+
+# Taps
+tap 'caskroom/cask'
+tap 'caskroom/fonts'
+tap 'caskroom/versions'
+tap 'homebrew/bundle'
+tap 'homebrew/dupes'
+tap 'homebrew/php'
+
+# Install ZSH
+brew 'zsh'
+brew 'zsh-completions'
+
+# Install GNU core utilities (those that come with macOS are outdated)
+brew 'coreutils'
+
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew 'findutils'
+
+# Install Bash 4
+brew 'bash'
+
+# Install Binaries
+brew 'ansible'
+brew 'automysqlbackup'
+brew 'cmatrix'
+brew 'composer'
+brew 'coreutils'
+brew 'dnsmasq'
+brew 'exa'
+brew 'ffmpeg'
+brew 'findutils'
+brew 'git'
+brew 'git-extras'
+brew 'grep'
+brew 'httpie'
+brew 'imagemagick'
+brew 'mas'
+brew 'mackup'
+brew 'mongodb'
+brew 'moreutils'
+brew 'mtr'
+brew 'mysql'
+brew 'nginx'
+brew 'ngrep'
+brew 'nmap'
+brew 'node'
+brew 'nvm'
+brew 'openssh'
+brew 'openssl'
+brew 'python'
+brew 'python3'
+brew 'reattach-to-user-namespace'
+brew 'rsync'
+brew 'screen'
+brew 'source-highlight'
+brew 'trash'
+brew 'tree'
+brew 'tmux'
+brew 'vim'
+brew 'wget'
+brew 'wifi-password'
+brew 'yarn'
+
+# Apps
+cask '1password'
+cask 'ableton-live'
+cask 'adobe-creative-cloud'
+cask 'airfoil'
+cask 'alfred'
+cask 'appcleaner'
+cask 'atom'
+cask 'atom-beta'
+cask 'chronosync'
+cask 'cyberduck'
+cask 'dash'
+cask 'dropbox'
+cask 'elmedia-player'
+cask 'firefox'
+cask 'firefoxnightly'
+cask 'forklift'
+cask 'flux'
+cask 'google-adwords-editor'
+cask 'google-chrome'
+cask 'google-chrome-canary'
+cask 'google-web-designer'
+cask 'gyazo'
+cask 'hermes'
+cask 'imagealpha'
+cask 'imageoptim'
+cask 'iterm2'
+cask 'java'
+cask 'kaleidoscope'
+cask 'mailplane'
+cask 'macdown'
+cask 'ngrok'
+cask 'opera'
+cask 'screaming-frog-seo-spider'
+cask 'screenflow'
+cask 'sequel-pro'
+cask 'shuttle'
+cask 'skype'
+cask 'slack'
+cask 'sourcetree'
+cask 'spectacle'
+cask 'spotify'
+cask 'sublime-text'
+cask 'suspicious-package'
+cask 'toggldesktop'
+cask 'torbrowser'
+cask 'torguard'
+cask 'tower'
+cask 'transmission'
+cask 'transmit'
+cask 'vagrant'
+cask 'vagrant-manager'
+cask 'validator-sac'
+cask 'vlc'
+cask 'vmware-fusion'
+
+# Quicklook
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlprettypatch'
+cask 'quicklook-csv'
+cask 'betterzipql'
+cask 'qlimagesize'
+cask 'webpquicklook'
+cask 'suspicious-package'
+
+# Fonts
+cask 'font-source-code-pro-for-powerline'
+cask 'font-source-code-pro'
+cask 'font-source-sans-pro'
+cask 'font-source-serif-pro'
+
+# Install Mac App Store apps
+mas 'Airmail', id: 918858936
+mas 'Better Rename 9', id: 414209656
+mas 'CodeBox', id: 412536790
+mas 'iMovie', id: 408981434
+mas 'Keynote', id: 409183694
+mas 'Gapplin', id: 768053424
+mas 'Giphy Capture', id: 668208984
+mas 'Moom', id: 419330170
+mas 'MWeb', id: 408981434
+mas 'Numbers', id: 409203825
+mas 'Pages', id: 409201541
+mas 'Paw', id: 584653203
+mas 'Sip', id: 507257563
+mas 'Todoist', id: 585829637
+mas 'Tweetbot', id: 557168941
