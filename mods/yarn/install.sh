@@ -2,36 +2,36 @@
 
 if test ! $(which diff-so-fancy)
 then
-  yarn add global diff-so-fancy
+  yarn global add diff-so-fancy
 fi
 
 if test ! $(which git-recent)
 then
-  yarn add global git-recent
+  yarn global add git-recent
 fi
 
 if test ! $(which git-open)
 then
-  yarn add global git-open
+  yarn global add git-open
 fi
 
 if test ! $(which gulp)
 then
-  yarn add global gulp
+  yarn global add gulp
 fi
 
 if test ! $(which http-server)
 then
-  yarn add global http-server
+  yarn global add http-server
 fi
 
 if test ! $(which http-server)
 then
-  yarn add global http-server
+  yarn global add http-server
 fi
 
 
 if test ! $(which webpack)
 then
-  yarn add global webpack
+  yarn global add webpack
 fi
