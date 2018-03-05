@@ -4,6 +4,8 @@ These are my dotfiles. They are currently undergoing a rewrite focused on the id
 
 ### To Install
 
+set your default shell to zsh (right click your user in system prefs and click advanced settings to see option)
+
 run: `sh install` from within the directory. If you encourter any errors with the brew install lines, in order to complete the installs, you will have to address any brew install isseus and rerun until there are no issues. Afer all brew installing is complete the install script will move onto all the other install files.
 
 ### Module Based Directory Structure
