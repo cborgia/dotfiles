@@ -16,8 +16,7 @@ alias j="jobs"
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
-alias o="open"
-alias oo="open ."
+alias o="open ."
 
 
 # grc overides for ls
