@@ -1,7 +1,5 @@
 # install php via homebrew
-brew tap homebrew/homebrew-php
-brew install php72
-
+brew install php@7.2
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
