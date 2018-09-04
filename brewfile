@@ -76,7 +76,6 @@ cask 'dash'
 cask 'docker'
 cask 'dropbox'
 cask 'duet'
-cask 'elmedia-player'
 cask 'firefox'
 cask 'firefox-nightly'
 cask 'forklift'
@@ -86,11 +85,9 @@ cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'google-web-designer'
 cask 'gyazo'
-cask 'hermes'
 cask 'hyper'
 cask 'imagealpha'
 cask 'imageoptim'
-cask 'iphoto-library-manager'
 cask 'insomnia'
 cask 'iterm2'
 cask 'java'
@@ -100,7 +97,6 @@ cask 'macdown'
 cask 'ngrok'
 cask 'opera'
 cask 'powerphotos'
-cask 'screaming-frog-seo-spider'
 cask 'screenflow'
 cask 'sequel-pro'
 cask 'shuttle'
@@ -111,12 +107,11 @@ cask 'spectacle'
 cask 'spotify'
 cask 'sublime-text'
 cask 'suspicious-package'
-cask 'toggl-beta'
+cask 'toggl'
 cask 'torbrowser'
 cask 'torguard'
 cask 'tower'
 cask 'transmission'
-cask 'transmit'
 cask 'tunnelblick'
 cask 'vagrant'
 cask 'vagrant-manager'
@@ -126,15 +121,16 @@ cask 'vlc'
 cask 'vmware-fusion'
 
 # Quicklook
-cask 'qlcolorcode'
-cask 'qlstephen'
-cask 'qlmarkdown'
-cask 'quicklook-json'
-cask 'qlprettypatch'
-cask 'quicklook-csv'
-cask 'qlimagesize'
-cask 'webpquicklook'
-cask 'suspicious-package'
+cask 'qlcolorcode' # Preview source code files with syntax highlighting
+cask 'qlstephen' # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
+cask 'qlmarkdown' # Preview Markdown files
+cask 'quicklook-json' # Preview JSON files
+cask 'qlprettypatch'  # Preview .patch files
+cask 'quicklook-csv' # Preview CSV files
+ cask 'betterzipql' # Preview archives
+cask 'qlimagesize' # Display image size and resolution
+cask 'webpquicklook' # Preview WebP images
+cask 'suspicious-package' # Preview the contents of a standard Apple installer package
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
