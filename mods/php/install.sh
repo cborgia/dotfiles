@@ -1,5 +1,5 @@
 # install php via homebrew
-brew install php@7.2
+brew install php@7.3
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
