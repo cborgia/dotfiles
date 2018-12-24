@@ -6,43 +6,30 @@
 # settings we’re about to change
 # osascript -e 'tell application "System Preferences" to quit'
 
-# Ask for the administrator password upfront
-# sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
-###############################################################################
-# General UI/UX                                                               #
-###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "touch"
-sudo scutil --set HostName "touch"
-sudo scutil --set LocalHostName "touch"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "touch"
+# sudo scutil --set ComputerName "touch"
+# sudo scutil --set HostName "touch"
+# sudo scutil --set LocalHostName "touch"
+# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "touch"
 
-# Set standby delay to 24 hours (default is 1 hour)
-# sudo pmset -a standbydelay 86400
-
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
 
 # Disable transparency in the menu bar and elsewhere on Yosemite
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
-# Menu bar: hide the Time Machine, Volume, and User icons
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
-	"/System/Library/CoreServices/Menu Extras/Clock.menu"
+# # Menu bar: hide the Time Machine, Volume, and User icons
+# for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+# 	defaults write "${domain}" dontAutoLoad -array \
+# 		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+# 		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
+# 		"/System/Library/CoreServices/Menu Extras/User.menu"
+# done
+# defaults write com.apple.systemuiserver menuExtras -array \
+# 	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+# 	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+# 	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+# 	"/System/Library/CoreServices/Menu Extras/Clock.menu"
 
 # Set highlight color to green
 defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
@@ -330,7 +317,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 chflags nohidden ~/Library
 
 # Show the /Volumes folder
-sudo chflags nohidden /Volumes
+# sudo chflags nohidden /Volumes
 
 # Remove Dropbox’s green checkmark icons in Finder
 # file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
@@ -407,6 +394,9 @@ defaults write com.apple.dock showhidden -bool true
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
 #defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+
+# Don’t show recent applications in Dock
+# defaults write com.apple.dock show-recents -bool false
 
 # Reset Launchpad, but keep the desktop wallpaper intact
 # find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
@@ -924,15 +914,15 @@ done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
 
-# See if the user wants to reboot.
-function reboot() {
-  read -p "Do you want to reboot your computer now? (y/N)" choice
-  case "$choice" in
-    y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
-    n | N | No | no) echo "No"; exit;; # If n | no, exit
-    * ) echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return;;
-  esac
-}
+# # See if the user wants to reboot.
+# function reboot() {
+#   read -p "Do you want to reboot your computer now? (y/N)" choice
+#   case "$choice" in
+#     y | Yes | yes ) echo "Yes"; exit;; # If y | yes, reboot
+#     n | N | No | no) echo "No"; exit;; # If n | no, exit
+#     * ) echo "Invalid answer. Enter \"y/yes\" or \"N/no\"" && return;;
+#   esac
+# }
 
 # # Call on the function
 # if [[ "Yes" == $(reboot) ]]
