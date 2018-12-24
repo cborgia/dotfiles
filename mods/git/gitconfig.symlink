@@ -7,7 +7,7 @@
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 		wip = !git add -u && git commit -m "WIP"
-	walk = !python ~/.git-walk.py
+		walk = !python ~/.git-walk.py
 [color]
 	diff = auto
 	status = auto
