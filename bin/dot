@@ -2,10 +2,11 @@
 #
 # dot
 #
-# `dot` handles installation, updates, things like that. Run it periodically
-# to make sure you're on the latest and greatest.
+# `dot` handles installation, updates, things like that. 
+# Run it periodically to make sure you're on the latest and greatest.
 
 set -e
+export ZSH=$HOME/repos/mine/cborgia/dotfiles
 
 parentDirectory="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd -P)"
 dotfilesDirectory="$(cd "$( dirname "$parentDirectory" )" && pwd -P)"
@@ -38,13 +39,16 @@ while test $# -gt 0; do
 	shift
 done
 
-export ZSH=$HOME/repos/mine/cborgia/dotfiles
-
 # Set macOS defaults
-sh $ZSH/mods/macos/set-defaults.sh
+echo "› set MacOS Defaults"
+echo "› ------------------"
+$ZSH/mods/macos/set-defaults.sh
+
 
 # Install homebrew
-sh $ZSH/mods/homebrew/install.sh 2>&1
+echo "› Install Homebrew"
+echo "› ------------------"
+$ZSH/mods/homebrew/install.sh 2>&1
 
 # Upgrade homebrew
 echo "› brew update"

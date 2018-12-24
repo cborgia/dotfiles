@@ -5,7 +5,6 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
-tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
@@ -61,6 +60,7 @@ brew 'vim'
 brew 'wget'
 brew 'wifi-password'
 brew 'yarn'
+brew 'youtube-dl'
 
 # Apps
 cask 'airfoil'
@@ -124,7 +124,7 @@ cask 'qlmarkdown' # Preview Markdown files
 cask 'quicklook-json' # Preview JSON files
 cask 'qlprettypatch'  # Preview .patch files
 cask 'quicklook-csv' # Preview CSV files
- cask 'betterzipql' # Preview archives
+cask 'betterzipql' # Preview archives
 cask 'qlimagesize' # Display image size and resolution
 cask 'webpquicklook' # Preview WebP images
 cask 'suspicious-package' # Preview the contents of a standard Apple installer package
@@ -141,10 +141,12 @@ mas 'Airmail', id: 918858936
 mas 'Better Rename 9', id: 414209656
 mas 'CodeBox', id: 412536790
 mas 'DaisyDisk', id: 411643860
+mas 'Email Signature Creator', id: 1221826210
 mas 'iMovie', id: 408981434
 mas 'Keynote', id: 409183694
 mas 'Gapplin', id: 768053424
 mas 'Giphy Capture', id: 668208984
+mas 'Magnet', id: 441258766
 mas 'Moom', id: 419330170
 mas 'MWeb', id: 408981434
 mas 'Numbers', id: 409203825

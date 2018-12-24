@@ -3,9 +3,11 @@
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
+        wtf = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
+		wip = !git add -u && git commit -m "WIP"
+	walk = !python ~/.git-walk.py
 [color]
 	diff = auto
 	status = auto
@@ -46,3 +48,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Chris Borgia
+	email = me@cborgia.me

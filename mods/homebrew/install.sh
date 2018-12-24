@@ -1,7 +1,9 @@
 #!/bin/sh
 
+echo "-----------------------------"
 echo "Setting up your Mac..."
-
+echo "-----------------------------"
+echo ""
 # Check for Homebrew, install if not found
 if test ! $(which brew)
 then
