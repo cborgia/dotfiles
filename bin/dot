@@ -40,21 +40,34 @@ while test $# -gt 0; do
 done
 
 # Set macOS defaults
-echo "› set MacOS Defaults"
 echo "› ------------------"
+echo "› DOT: Set MacOS Defaults"
+echo "› ------------------"
+echo ""
 $ZSH/mods/macos/set-defaults.sh
 
 
 # Install homebrew
-echo "› Install Homebrew"
 echo "› ------------------"
+echo "› DOT: Install Homebrew?"
+echo "› ------------------"
+echo ""
 $ZSH/mods/homebrew/install.sh 2>&1
 
 # Upgrade homebrew
-echo "› brew update"
+echo "› ------------------"
+echo "› DOT: Upgrade homebrew"
+echo "› ------------------"
+echo ""
 brew update
 
 # Install software
+echo "› ------------------"
+echo "› DOT: Install Software"
+echo "› ------------------"
 echo "› $ZSH/install"
 $ZSH/install
 
+echo "› -------------------------------------------"
+echo "› DOT: Done. Thanks..... Now get back to work"
+echo "› -------------------------------------------"

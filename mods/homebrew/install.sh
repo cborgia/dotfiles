@@ -1,8 +1,8 @@
 #!/bin/sh
 
-echo "-----------------------------"
-echo "Setting up your Mac..."
-echo "-----------------------------"
+echo "---------------------------------------"
+echo "Check if Homebrew needs to be installed"
+echo "---------------------------------------"
 echo ""
 # Check for Homebrew, install if not found
 if test ! $(which brew)
