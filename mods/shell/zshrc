@@ -6,17 +6,6 @@ declare -a dirs_to_prepend
 dirs_to_prepend=(
   "/usr/local/sbin"
   "$HOME/.composer/vendor/bin"
-  "$(brew --prefix homebrew/php/php70)"
-  # "/usr/bin"
-  # "/usr/local/sbin"
-  # "/usr/local/git/bin"
-  # "/usr/local"
-  # "/usr/local/mysql/bin"
-  # "$HOME/repos/mine/cborgia/dotfiles/bin"
-  # "$HOME/bin"
-  # "$(brew --prefix ruby)/bin"
-  # "$(brew --prefix coreutils)/libexec/gnubin"
-  # "$(brew --prefix)/share/npm/bin" 
 )
 
 # Explicitly configured $PATH
