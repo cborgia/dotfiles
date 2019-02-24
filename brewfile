@@ -120,7 +120,7 @@ cask 'vagrant-manager'
 cask 'validator-sac'
 cask 'visual-studio-code'
 cask 'vlc'
-cask 'vmware-fusion'
+# cask 'vmware-fusion'
 
 # Quicklook
 cask 'qlcolorcode' # Preview source code files with syntax highlighting
