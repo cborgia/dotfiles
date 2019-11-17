@@ -35,8 +35,6 @@
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 [diff]
 	tool = Kaleidoscope
-[credential]
-	helper = osxkeychain
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -50,4 +48,4 @@
 	trustExitCode = true
 [user]
 	name = Chris Borgia
-	email = me@cborgia.me
+	email = chris@cborgia.me
