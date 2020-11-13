@@ -17,6 +17,7 @@
 	excludesfile = /Users/chris/.gitignore_global
 	attributesfile = ~/.gitattributes
 	editor = vim
+	whitespace = cr-at-eol
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
@@ -43,9 +44,11 @@
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
+[user]
+	name = Chris
+	email = chris@cborgia.me
+[commit]
+	template = /Users/chris/.stCommitMsg
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[user]
-	name = Chris Borgia
-	email = chris@cborgia.me
