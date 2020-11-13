@@ -6,6 +6,6 @@ brew install php
 # mv composer.phar /usr/local/bin/composer
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/valet laravel/installer laravel/lumen-installer tightenco/jigsaw spatie/http-status-check bramus/mixed-content-scan
+/usr/local/bin/composer global require laravel/valet laravel/installer
 
 composer global update
