@@ -60,6 +60,7 @@ echo "› DOT: Upgrade homebrew"
 echo "› ------------------"
 echo ""
 brew update
+brew bundle --file=~/repos/mine/cborgia/dotfiles/mods/homebrew/brewfile
 
 # Install software
 echo "› ------------------"
