@@ -1,6 +1,5 @@
 # Repo Roots
 alias repos='cd ~/repos'
 
-alias add='cd ~/repos/mine/antidumbdown'
-alias bco='cd ~/repos/mine/borgiaco'
-alias tty='cd ~/repos/mine/techtegrity'
+alias cs='cd ~/repos/mine/ClientSalt'
+alias tt='cd ~/repos/mine/Techtegrity'
