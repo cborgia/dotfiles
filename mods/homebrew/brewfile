@@ -115,7 +115,7 @@ cask 'vlc'
 # cask 'vmware-fusion'
 
 # Quicklook
-cask 'qlcolorcode' # Preview source code files with syntax highlighting
+# cask 'qlcolorcode' # Preview source code files with syntax highlighting
 cask 'qlstephen' # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
 cask 'qlmarkdown' # Preview Markdown files
 cask 'quicklook-json' # Preview JSON files
@@ -125,7 +125,7 @@ cask 'qlimagesize' # Display image size and resolution
 cask 'webpquicklook' # Preview WebP images
 
 # Fonts
-cask 'font-fontawesome'
+# cask 'font-fontawesome'
 cask 'font-inconsolata'
 cask 'font-fira-code'
 cask 'font-raleway'
