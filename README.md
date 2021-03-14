@@ -1,8 +1,7 @@
 # cborgia Dotfiles
 
-These are my dotfiles. They are currently undergoing a rewrite focused on the idea of a Module Based Directory Structure. 
-
 ### To Install
+run: `sh bootstrap` from within this repos directory. 
 run: `sh install` from within this repos directory. 
 
 If you encounter any errors with the brew install lines, in order to complete the installs, you will have to address any brew install issues and rerun until there are no issues. After all brew installing is complete the install script will move onto all the other install files.

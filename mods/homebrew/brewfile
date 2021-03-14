@@ -1,160 +1,149 @@
-cask_args appdir: '/Applications'
+cask_args appdir: "/Applications"
 
 # Taps
-tap 'homebrew/bundle'
-tap 'homebrew/cask-versions'
-tap 'homebrew/cask-drivers'
-tap 'homebrew/cask-fonts'
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+tap "homebrew/services"
 
-# Install ZSH
-brew 'zsh'
-brew 'zsh-completions'
+brew "zsh-completions"
 
 # Install GNU core utilities (those that come with macOS are outdated)
-brew 'coreutils'
+brew "coreutils"
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew 'findutils'
-
-# Install Bash 4
-brew 'bash'
+brew "findutils"
 
 # Install Binaries
-brew 'automysqlbackup'
-brew 'cmatrix'
-brew 'composer'
-brew 'coreutils'
-brew 'dnsmasq'
-brew 'exa'
-brew 'ffmpeg'
-brew 'findutils'
-brew 'git'
-brew 'git-extras'
-brew 'grep'
-brew 'httpie'
-brew 'imagemagick'
-brew 'mas'
-brew 'moreutils'
-brew 'mtr'
-brew 'mysql'
-brew 'nginx'
-brew 'ngrep'
-brew 'nmap'
-brew 'node'
-brew 'nvm'
-brew 'openssh'
-brew 'openssl'
-brew 'php'
-brew 'python'
-brew 'python3'
-brew 'reattach-to-user-namespace'
-brew 'rsync'
-brew 'screen'
-brew 'source-highlight'
-brew 'svn'
-brew 'trash'
-brew 'tree'
-brew 'tmux'
-brew 'vim'
-brew 'wget'
-brew 'wifi-password'
-brew 'yarn'
-brew 'youtube-dl'
+brew "automysqlbackup"
+brew "cmatrix"
+brew "composer"
+brew "coreutils"
+brew "ffmpeg"
+brew "grep"
+brew "httpie"
+brew "mas"
+brew "mtr"
+brew "mysql"
+brew "nginx"
+brew "ngrep"
+brew "nmap"
+brew "node"
+brew "nvm"
+brew "openssh"
+brew "openssl"
+brew "php"
+brew "php@7.4"
+brew "python"
+brew "python3"
+brew "reattach-to-user-namespace"
+brew "rsync"
+brew "screen"
+brew "source-highlight"
+brew "svn"
+brew "trash"
+brew "tree"
+brew "tmux"
+brew "vim"
+brew "wget"
+brew "wifi-password"
+brew "youtube-dl"
 
 # Apps
-cask '1password'
-# cask 'airfoil'
-# cask 'airparrot'
-cask 'alfred'
-cask 'appcleaner'
-# cask 'arq'
-cask 'betterzip'
-cask 'charles'
-cask 'chronosync'
-cask 'cyberduck'
-cask 'dash'
-cask 'docker'
-# cask 'dropbox'
-cask 'firefox'
-cask 'firefox-nightly'
-cask 'forklift'
-cask 'github'
-cask 'google-chrome'
-cask 'google-chrome-canary'
-# cask 'google-adwords-editor'
-cask 'google-web-designer'
-cask 'hyper'
-cask 'imagealpha'
-cask 'imageoptim'
-cask 'insomnia'
-cask 'iterm2'
-# cask 'java'
-cask 'kaleidoscope'
-cask 'mailplane'
-cask 'macdown'
-cask 'ngrok'
-cask 'powerphotos'
-# cask 'screenflow'
-cask 'sequel-ace'
-# cask 'shuttle'
-cask 'slack'
-cask 'sonos'
-cask 'sourcetree'
-cask 'spectacle'
-# cask 'spotify'
-cask 'sublime-text'
-cask 'tor-browser'
-cask 'torguard'
-cask 'tower'
-cask 'transmission'
-cask 'tunnelblick'
-cask 'vagrant'
-cask 'vagrant-manager'
-cask 'visual-studio-code'
-cask 'vlc'
-# cask 'vmware-fusion'
+cask "1password"
+cask "alfred"
+cask "appcleaner"
+cask "android-studio"
+cask "arq"
+cask "audio-hijack"
+cask "betterzip"
+cask "charles"
+cask "chronosync"
+cask "clickup"
+cask "cyberduck"
+cask "dash"
+cask "docker"
+cask "figma"
+cask "firefox"
+cask "firefox-developer-edition"
+cask "firefox-nightly"
+cask "fission"
+cask "forklift"
+cask "github"
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "google-web-designer"
+cask "hyper"
+cask "imagealpha"
+cask "imageoptim"
+cask "insomnia"
+cask "kaleidoscope"
+cask "local"
+cask "mailplane"
+cask "macdown"
+cask "ngrok"
+cask "openvpn-connect"
+cask "pdf-expert"
+cask "powerphotos"
+cask "screenflow"
+cask "sequel-ace"
+cask "skitch"
+cask "slack"
+cask "sonos"
+cask "sourcetree"
+cask "spectacle"
+cask "sublime-text"
+cask "tableplus"
+cask "tinkerwell"
+cask "tor-browser"
+cask "tower"
+cask "transmission"
+cask "tunnelblick"
+cask "visual-studio-code"
+cask "vlc"
+cask "zoom"
 
 # Quicklook
-# cask 'qlcolorcode' # Preview source code files with syntax highlighting
-cask 'qlstephen' # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
-cask 'qlmarkdown' # Preview Markdown files
-cask 'quicklook-json' # Preview JSON files
-cask 'qlprettypatch'  # Preview .patch files
-cask 'quicklook-csv' # Preview CSV files
-cask 'qlimagesize' # Display image size and resolution
-cask 'webpquicklook' # Preview WebP images
+# cask "qlcolorcode" # Preview source code files with syntax highlighting
+cask "qlstephen" # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
+cask "qlmarkdown" # Preview Markdown files
+cask "quicklook-json" # Preview JSON files
+cask "qlprettypatch"  # Preview .patch files
+cask "quicklook-csv" # Preview CSV files
+cask "qlimagesize" # Display image size and resolution
+cask "webpquicklook" # Preview WebP images
 
 # Fonts
-# cask 'font-fontawesome'
-cask 'font-inconsolata'
-cask 'font-fira-code'
-cask 'font-raleway'
-cask 'font-roboto'
-cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+# cask "font-fontawesome"
+cask "font-inconsolata"
+cask "font-fira-code"
+cask "font-raleway"
+cask "font-roboto"
+cask "font-source-code-pro-for-powerline"
+cask "font-source-code-pro"
+cask "font-source-sans-pro"
+cask "font-source-serif-pro"
 
 # Install Mac App Store apps
-# mas 'Airmail', id: 918858936
-mas 'Be Focused Pro', id: 961632517
-mas 'Better Rename 9', id: 414209656
-mas 'CodeBox', id: 412536790
-mas 'DaisyDisk', id: 411643860
-mas 'Email Signature Creator', id: 1221826210
-mas 'iMovie', id: 408981434
-mas 'Keynote', id: 409183694
-mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
-mas 'Magnet', id: 441258766
-mas 'Moom', id: 419330170
-# mas 'MWeb', id: 408981434
-mas 'Numbers', id: 409203825
-# mas 'Parcel', id: 639968404
-mas 'Pages', id: 409201541
-mas 'Red Hot Timer', id: 929960914
-# mas 'Scrivener', id:418889511
-mas 'Sip', id: 507257563
-mas 'SiteSucker', id: 442168834
-mas 'Skitch', id: 425955336
-mas 'Tweetbot', id: 557168941
+# mas "Airmail", id: 918858936
+mas "Be Focused Pro", id: 961632517
+mas "Better Rename 9", id: 414209656
+mas "CodeBox", id: 412536790
+mas "DaisyDisk", id: 411643860
+mas "Email Signature Creator", id: 1221826210
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Gapplin", id: 768053424
+mas "Giphy Capture", id: 668208984
+mas "Magnet", id: 441258766
+mas "Moom", id: 419330170
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Timer RH", id: 929960914
+mas "Sip", id: 507257563
+mas "SiteSucker", id: 442168834
+mas "Skitch", id: 425955336
+mas "Tweetbot", id: 557168941

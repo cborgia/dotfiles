@@ -1,4 +1,4 @@
-# Laravel Artisan
+# Laravel
 alias art="php artisan"
 alias serve="php artisan serve"
 alias migrate="php artisan migrate"
