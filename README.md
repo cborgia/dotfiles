@@ -18,9 +18,19 @@ system prefs → keyboard → turn key repeat to fastest, turn delay to shortest
 #install homebrew https://brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+```
 
-brew install --cask 1password    
+# Password Manager and Alfred
+
+````
+brew install --cask 1password
 brew install --cask alfred
+```
+enable clipboard history and add snippets Then download the [1password workflow](https://github.com/alfredapp/1password-workflow#readme)
+
+# Browser 
+
+````
 brew install --cask google-chrome
 brew install --cask homebrew/cask-versions/google-chrome-canary
 brew install --cask firefox
