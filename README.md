@@ -17,7 +17,6 @@ system prefs → keyboard → turn key repeat to fastest, turn delay to shortest
 ```
 #install homebrew https://brew.sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
 ```
 
 # Password Manager and Alfred
@@ -26,7 +25,8 @@ system prefs → keyboard → turn key repeat to fastest, turn delay to shortest
 brew install --cask 1password
 brew install --cask alfred
 ```
-enable clipboard history and add snippets Then download the [1password workflow](https://github.com/alfredapp/1password-workflow#readme)
+
+enable clipboard history and add snippets Then download the [1password workflow](https://github.com/alfredapp/1password-workflow#readme) and install the [1password CLI](https://app-updates.agilebits.com/product_history/CLI2)
 
 # Browser 
 
